@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\noutput: html_document\n---\n#Lecture 4: A (very brief) intro to plotting R:\n\n##**Types of graphical analysis**\n###For explanatory analysis\n* Getting to know my data\n* Rough and ready plot of chunk rough\n\n###For reporting\n* Presenting my data to others\n* Tells a standalone story \n* polished plot of chunk polished\n\n##**Base R graphics**\n##Base graphics (_graphics_ and _grDevices_):\n* these packages are powerful graphing function to base R.\n\n##Graphing process in base R\n* Initialise a new plot\n\t+ Plotting functions: _plot(x,y,...)_, _boxplot()_, _hist()_, _barplot(height, ...)_, _mosaicplot(x,...)_.\n\t+ Improve my plot (find key plot parameters with _?par_): \n* Add to the new plot (once I have it)\n\t+in the form of ablines: _abline()_, _lines()_, _points()_, _text()_\n\n##Saving my plot\nI can save my plot to a file by specifying the graphics device before I start plotting the figure [e.g., _png()_, _pdf()_]. The _pdf_ is prefereable as it is saved in vector format. Remember to give a file name [e.g., _pdf('foo.pdf')_.  For _pdf_ outputs, I can also change the page orientation to landscape [e.g., _pdf('foo.pdf, paper = 'a4R')].  If I open a device, I should remember to close it at the end [_dev.off()], otherwise the file won't save. By default, the file will be saved to my working directory. \n\n##The grammar of graphics and ggplot2\n* Leland Wilkinson conceptualised a grammar for graphics that would move graphics passed mere chart types (_words_), like pie-charts, bar-charts, etcc. \n* By providing a grammar for graphics, he heoped the provide the framework to build and unlimited array of graphic forms (_statements_). \n\n##ggplot2\n###Basic components of a ggplot2 plot:\n* data (_in a dataframe_)\n* Aesthetics (_how data are mapped to colour , size, etc_)\n* Geoms (_gemetric objects like points, lines, shapes_)\n* Coordinate system\n\n\n##IN SWIRL:\n* The _head(data.set)_ function provides the firt few values of the data set, instead of the whole\n* To save some typing, call the R command _with_ using 2 arguments. The first will be the data set containing which ever variables, and the second will be the call to plot (whichever type, not only scatter as implied). Doing this allows me to avoid using the longer notation, [e.g., data.set$'variable'].\n* The _par()_ function is used to specify global graphics parameters that affect all plots in an R session. Use _dev.off_ or _plot.new_ to reset the defaults.\n* The argument _type = n_ tells R to set up the plot, but not to put the data in it.\n* _qplot_ is the basic plotting function in the ggplot2 package.  It's a convenient wrapper for creating a number of different types of plots using a consistent calling scheme.\n* \n",
+    "created" : 1466729254179.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3077292133",
+    "id" : "82ED1AB",
+    "lastKnownWriteTime" : 1466731558,
+    "last_content_update" : 1466731558243,
+    "path" : "~/STATS STUFF/Practise/Lecture 4 ggplot2 and graphics in R/Lecture 4 Plotting in R.md",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "markdown"
+}

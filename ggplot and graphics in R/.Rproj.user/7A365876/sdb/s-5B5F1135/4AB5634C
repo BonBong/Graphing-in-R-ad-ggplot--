@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(swirl)\ninstall_from_swirl('Exploratory Data Analysis')\nswirl()\nlibrary(jpeg)\ninstall(\"jpeg\")\ninstall.packages(\"jpeg\")\nswirl()\nairquality\nhead(airquality)\nskip()\n?hist\nhist(airquality$Ozone)\ntable(airquality$Month)\n?boxplot\nboxplot(Ozone~Month, airquality)\nboxplot(Ozone~Month, airquality, xlab = \"Month\", ylab = \"Ozone (ppb)\", col.axis = \"blue\", col.lab = \"red\")\nboxplot(Ozone~Month, airquality, xlab = \"Month\", ylab = \"Ozone (ppb)\", col.axis = \"blue\", col.lab = \"red\", main = \"Ozone and Wind in New York City\")\ntitle(main = \"Ozone and Wind in New York City\")\n?with\nwith(airquality, plot(Wind, Ozone))\ntitle(main = \"Ozone and Wind in New York City\")\nlenght(par())\nlength(par())\n?par\nnames(par())\npar()$pin\npar('fg')\npar('pch')\npar('lty')\nwith(airquality, plot(Wind, Ozone, set = n))\nplot(airquality$Wind, airquality$Ozone, set = n)\nplot(airquality$Wind, airquality$Ozone, set = \"n\")\nplot(airquality$Wind, airquality$Ozone, type = \"n\")\ntitle(main = \"Wind and Ozone in NYC\")\nskip(0)\nskip()\n?subset\n?par()\npoints(may, Wind, Ozone, col = \"blue\", pch = \"triangles\")\nskip()\nnotmay <- subset(airquality, Month!==5)\nnotmay <- subset(airquality, Month == 1:4 & 5:12)\nnotmay <- subset(airquality, Month !=5\nnotmay <- subset(airquality, Month !=5)\nnotmay <- subset(airquality, Month!=5)\npoints(notmay$Wind, notmay$Ozone, col = \"red\", pch = 8)\n",
+    "created" : 1466732310969.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1693473806",
+    "id" : "4AB5634C",
+    "lastKnownWriteTime" : 1466670839,
+    "last_content_update" : 1466670839,
+    "path" : "~/STATS STUFF/Practise/Lecture 4 ggplot2 and graphics in R/ggplot and graphics in R/.Rhistory",
+    "project_path" : ".Rhistory",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_history"
+}
