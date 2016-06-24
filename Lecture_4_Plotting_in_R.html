@@ -190,6 +190,18 @@ $(document).ready(function () {
 <li>The argument <em>type = n</em> tells R to set up the plot, but not to put the data in it.</li>
 <li><em>qplot</em> is the basic plotting function in the ggplot2 package. It’s a convenient wrapper for creating a number of different types of plots using a consistent calling scheme.</li>
 <li>The all-purpose qplot can also create box and whisker plots.First specify the variable by which you’ll split the data, then specify the variable which you want to examine.The geom, set equal to the string “boxplot”.</li>
+<li>We’ll do two plots, a scatterplot and then a histogram, each with 3 facets. For the scatterplot, call qplot with 4 arguments. The first two are displ and hwy and the third is the argument data set equal to mpg. The fourth is the argument facets which will be set equal to the expression . ~ drv which is ggplot2’s shorthand for numberof rows (to the left of the ~) and number of columns (to the right of the ~). Here the . indicates a single row and drv implies 3, since there are 3 distinct drive factors. Try this now.</li>
+</ul>
+</div>
+<div id="st-summary-of-ggplot" class="section level2">
+<h2>1st Summary of ggplot</h2>
+<ul>
+<li><em>qplot()</em> is a basic workhouse function of ggplot2</li>
+<li><em>qplot()</em> does box and wisker plots, scatterplots, and histograms</li>
+<li><strong>gg</strong>plot is the <strong>g</strong>rammar of <strong>g</strong>raphics</li>
+<li>the geom argument takes a tring for a value</li>
+<li>the data, and binwidth arguments does not take a string for a value</li>
+<li>x- and y-axes do not have to specified when using <em>qplot</em></li>
 </ul>
 </div>
 </div>
