@@ -46,3 +46,12 @@ I can save my plot to a file by specifying the graphics device before I start pl
 * The argument _type = n_ tells R to set up the plot, but not to put the data in it.
 * _qplot_ is the basic plotting function in the ggplot2 package.  It's a convenient wrapper for creating a number of different types of plots using a consistent calling scheme.
 * The all-purpose qplot can also create box and whisker plots.First specify the variable by which you'll split the data, then specify the variable which you want to examine.The geom, set equal to the string "boxplot".
+* We'll do two plots, a scatterplot and then a histogram, each with 3 facets. For the scatterplot, call qplot with 4 arguments. The first two are displ and hwy and the third is the argument data set equal to mpg. The fourth is the argument facets which will be set equal to the expression . ~ drv which is ggplot2's shorthand for numberof rows (to the left of the ~) and number of columns (to the right of the ~). Here the . indicates a single row and drv implies 3, since there are 3 distinct drive factors. Try this now.
+
+##1st Summary of ggplot
+* _qplot()_ is a basic workhouse function of ggplot2
+* _qplot()_ does box and wisker plots, scatterplots, and histograms
+* **gg**plot is the **g**rammar of **g**raphics
+* the geom argument takes a tring for a value
+* the data, and binwidth arguments does not take a string for a value
+* x- and y-axes do not have to specified when using _qplot_

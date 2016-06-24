@@ -40,3 +40,19 @@ pal(seq(0, 1, len = 6)
     ?str
     str(mpg)
     qplot
+    qplot(displ, hwy, data = mpg, color = drv, geom = c('point', 'smooth'))
+    
+    qplot(y = hwy, data = mpg, color = drv)
+    
+    myhigh
+    
+    qplot (drv, hwy, data = mpg, geom = 'boxplot')
+    qplot (drv, hwy, data = mpg, geom = 'boxplot', color = manufacturer)
+    qplot(hwy, data = mpg, fill = drv)
+    
+    qplot(displ, hwy, data = mpg, facets = .~ drv)
+    
+qplot(hwy, data = mpg, facets =drv ~ ., binwidth = 2)
+2
+
+    
