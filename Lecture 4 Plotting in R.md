@@ -45,4 +45,4 @@ I can save my plot to a file by specifying the graphics device before I start pl
 * The _par()_ function is used to specify global graphics parameters that affect all plots in an R session. Use _dev.off_ or _plot.new_ to reset the defaults.
 * The argument _type = n_ tells R to set up the plot, but not to put the data in it.
 * _qplot_ is the basic plotting function in the ggplot2 package.  It's a convenient wrapper for creating a number of different types of plots using a consistent calling scheme.
-* 
+* The all-purpose qplot can also create box and whisker plots.First specify the variable by which you'll split the data, then specify the variable which you want to examine.The geom, set equal to the string "boxplot".
